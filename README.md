@@ -38,6 +38,14 @@ npm run ios
 npm run web
 ```
 
+### Running tests
+
+```bash
+npm test
+```
+
+This runs the economy checks once with Jest (`jest-expo` preset) and exits non-zero if any check fails.
+
 ## Project Structure
 
 ```
@@ -46,6 +54,7 @@ src/
 ├── components/   # UI components and simulation visuals
 ├── data/         # Game constants and content
 ├── economy/      # Day simulation / economy logic
+│   └── __tests__/  # Economy checks (npm test)
 ├── i18n/         # Translations (en, es)
 ├── navigation/   # App navigation
 ├── screens/      # App screens (Stand, Shop, Recipe, Upgrades, Location...)
